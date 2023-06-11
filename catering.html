@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Bennett's Final Project</title>
+    <script src="https://kit.fontawesome.com/51afa92cd4.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="catering">
+
+    <header>
+        <div class="head-wrapper">
+            <div class="logo">
+                <img id="logo" src="images/sub.svg" alt="logo">
+            </div>
+            <div class="header-text">
+                <h1>Zeek's Deli</h1>
+                <div class="socials">
+                    <a href="">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa-brands fa-yelp"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="catering.html">Catering</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div id="wrapper">
+
+
+        <h2>Catering Form!</h2>
+        <main>
+            <form action="formhandler.php" method="post">
+                <fieldset>
+                    <legend>Zeeks Catering</legend>
+                    <label>Name</label>
+                    <input type="text" name="Name">
+                    <label>Email</label>
+                    <input type="email" name="Email">
+                    <label>Phone</label>
+                    <input type="tel" name="telephone">
+                    <label>Address</label>
+                    <input type="text" name="address">
+
+                    <label>Party Size</label>
+                    <ul>
+                        <li><input type="radio" name="party-size" value="small">0-15 people</li>
+                        <li><input type="radio" name="party-size" value="medium">15-30 people</li>
+                        <li><input type="radio" name="party-size" value="large">31+ people</li>
+
+                    </ul>
+
+                    <label>Sub Assortments (we'll contact you to take the actual order)</label>
+                    <ul>
+                        <li><input type="checkbox" name="assortments[]" value="Meats">Meat</li>
+                        <li><input type="checkbox" name="assortments[]" value="Veggies">Veggie</li>
+                        <li><input type="checkbox" name="assortments[]" value="Both">Both</li>
+                    </ul>
+
+                    <label for="order">Date for Order</label>
+                    <input type="date" id="order" name="order-date" value="2023-02-25" min="2023-02-25"
+                        max="2024-02-25">
+                    <label>What's the Occassion?</label>
+                    <select>
+                        <option value="null">Select One</option>
+                        <option value="nw">Work Party</option>
+                        <option value="sw">Family Get-Together</option>
+                        <option value="mw">Birthday</option>
+                        <option value="so">Other</option>
+                    </select>
+                    <label>Comments</label>
+                    <textarea name="comments"></textarea>
+                    <input type="submit" name="submit" value="Send It!">
+                </fieldset>
+            </form>
+
+        </main>
+        <aside>
+            <h3>Our catering form!</h3>
+            <p>Please fill out this form very carefully with as much detail as possible so we can cater to your needs!
+                Catering forms must be filled out 24 hours in advanced to allow us preperation. If you have any
+                questions about the form, please click on the contact tab, send us an email or call during business
+                hours. Thanks! Sit munere facilis accusam eu
+                dicat falli consulatu at vis. Te facilisis</p>
+
+            <img id="sandwich" src="images/sandwiches.jpg" alt="sandwiches">
+
+            <h3>Things to take note</h3>
+            <p>Lorem ipsum dolor sit amet et delectus
+                accommodare his consul copiosae legendos at
+                vix ad putent delectus delicata usu.
+                Vidit dissentiet eos cu eum an brute
+                copiosae hendrerit. Eos erant dolorum an.
+                Per facer affert ut. Mei iisque mentitum
+                moderatius cu. Sit munere facilis accusam eu
+                dicat falli consulatu at vis. Te facilisis</p>
+        </aside>
+
+    </div>
+    <footer>
+        <ul>
+            <li>Copyright &copy; 2023</li>
+            <li>All Rights Reserved</li>
+            <li><a href="">Terms of Use</a></li>
+            <li><a href="../index.html">Web Design by Bennett</a></li>
+            <li><a
+                    href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fcompass.northseattle.edu%2F~bfife%2Fit161%2Ffinal%2Fcatering.html">VALID</a>
+            </li>
+
+        </ul>
+    </footer>
+
+</body>
+
+</html>
